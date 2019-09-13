@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 
 const IndexPage = () => (
   <Layout>
-        <SEO title="Home" />
+  <SEO title="Home" />
   <Wrapper>
     <Hero/>
     <Experience/>
