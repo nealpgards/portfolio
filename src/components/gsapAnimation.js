@@ -58,11 +58,11 @@ const Sticky2 = () => (
           <div className="sticky">
             <Timeline totalProgress={progress} paused>
               <Tween
-                  from={{ x: '0%', top: '0%' }}
+                  from={{ x: '10%', top: '0%' }}
                   to={{ x: '60%', top: '10%' }}
               >
                 <div className="animation">
-                    ☝🏻
+                    <span role="img" aria-label="">☝🏻</span>
                 </div>
               </Tween>
               <Timeline 
