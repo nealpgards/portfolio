@@ -1,34 +1,35 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Image from "../components/image"
+import "../components/main.css"
+import styled from '@emotion/styled'
+
+const Wrapper = styled.section`
+  width: 100%;
+  background-color: #FF44A5;
+`
+
+const Nav = styled.nav`
+  display:grid;
+  grid-template-columns: 1fr;
+  justify-content: start;
+  grid-template-rows: auto;
+  padding: 1.5rem 3rem;
+`
+
+
+
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#1ED760`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+  <Wrapper>
+    <Nav>
         <Link
-          to="/"
-          style={{
-            color: `black`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+          to="/" style={{maxWidth: 64}}>
+          <Image/>
         </Link>
-      </h1>
-    </div>
-  </header>
+    </Nav>
+  </Wrapper>
 )
 
 Header.propTypes = {
