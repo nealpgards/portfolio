@@ -12,14 +12,12 @@ const Wrapper = styled.section`
 
 const Nav = styled.nav`
   display:grid;
+  max-width: 1100px;
   grid-template-columns: 1fr;
   justify-content: start;
   grid-template-rows: auto;
   padding: 1.5rem 3rem;
 `
-
-
-
 
 const Header = ({ siteTitle }) => (
   <Wrapper>
