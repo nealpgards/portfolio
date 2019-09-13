@@ -59,24 +59,24 @@ const Experience = ({ siteTitle }) => (
        <Title>Experience</Title>
        <ExperienceSection>
            <SingleExperience>
-                <h4>Operations Manager</h4>
-                <h6>Samplify Bio</h6>
+                <h4>Samplify Bio 🧬</h4>
+                <h6>Operations Manager | August 2017 - May 2019</h6>
                 <p>&bull; Managed day-to-day operations, production, procurement and delivery of DNA testing products for multiple customers worldwide.</p>
                 <p>&bull; Managed day-to-day operations, production, procurement and delivery of DNA testing products for multiple customers worldwide.</p>
            </SingleExperience>
            <SingleExperience>
-                <h4>THis is my title</h4>
-                <h6>this is my company</h6>
+                <h4>Veritas Genetics 🧬</h4>
+                <h6>Marketing & Brand | November 2015 - February 2017</h6>
                 <p>This is the description of what i did at that company</p>
            </SingleExperience>
            <SingleExperience>
-                <h4>THis is my title</h4>
-                <h6>this is my company</h6>
-                <p>This is the description of what i did at that company</p>
+                <h4>Samplify Bio 🧬</h4>
+                <h6>Business Development | Some time to another time</h6>
+                <p>First employee to help commercialize a saliva collection device for genetic testing companies.</p>
            </SingleExperience>
            <SingleExperience>
-                <h4>THis is my title</h4>
-                <h6>this is my company</h6>
+                <h4>Supshot ☠️</h4>
+                <h6>Founder</h6>
                 <p>This is the description of what i did at that company</p>
            </SingleExperience>
        </ExperienceSection>

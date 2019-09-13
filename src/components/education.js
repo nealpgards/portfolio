@@ -59,25 +59,11 @@ const Education = ({ siteTitle }) => (
        <Title>Education</Title>
        <EducationSection>
            <SingleEducation>
-                <h4>THis is my title</h4>
+                <h4>University of Colorado at Boulder, Leeds School of Business</h4>
                 <h6>this is my company</h6>
                 <p>This is the description of what i did at that company</p>
            </SingleEducation>
-           <SingleEducation>
-                <h4>THis is my title</h4>
-                <h6>this is my company</h6>
-                <p>This is the description of what i did at that company</p>
-           </SingleEducation>
-           <SingleEducation>
-                <h4>THis is my title</h4>
-                <h6>this is my company</h6>
-                <p>This is the description of what i did at that company</p>
-           </SingleEducation>
-           <SingleEducation>
-                <h4>THis is my title</h4>
-                <h6>this is my company</h6>
-                <p>This is the description of what i did at that company</p>
-           </SingleEducation>
+        
        </EducationSection>
     </Container>
   </Wrapper>
