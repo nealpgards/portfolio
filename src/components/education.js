@@ -11,9 +11,9 @@ const Wrapper = styled.section`
 const Container = styled.div`
   display:grid;
   max-width: 960px;
-  grid-column-gap: 6rem;
+  grid-column-gap: 2rem;
   padding: 8rem 3rem;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 300px 1fr;
   grid-template-rows: auto;
   justify-items: stretch;
   margin: 0 auto;
@@ -53,15 +53,15 @@ const SingleEducation = styled.div`
 
 
 
-const Education = ({ siteTitle }) => (
+const Education = (props) => (
   <Wrapper>
     <Container>
        <Title>Education</Title>
        <EducationSection>
            <SingleEducation>
-                <h4>University of Colorado at Boulder, Leeds School of Business</h4>
-                <h6>this is my company</h6>
-                <p>This is the description of what i did at that company</p>
+                <h4>{props.title}</h4>
+                <h6>{props.company}</h6>
+                <p>{props.description}</p>
            </SingleEducation>
         
        </EducationSection>
@@ -70,11 +70,11 @@ const Education = ({ siteTitle }) => (
 )
 
 Education.propTypes = {
-  siteTitle: PropTypes.string,
+  message: PropTypes.string,
 }
 
 Education.defaultProps = {
-  siteTitle: ``,
+  message: `Title`,
 }
 
 export default Education

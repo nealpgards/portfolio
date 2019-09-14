@@ -16,12 +16,18 @@ const Container = styled.div`
   margin: 0 auto;
 `
 
-const Left = styled.div`
+const Left = styled.h6`
   justify-self: start;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
 `
 
-const Right = styled.div`
+const Right = styled.h6`
   justify-self: end;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 30px;
 `
 
 
@@ -29,9 +35,9 @@ const Footer = ({ siteTitle }) => (
   <Wrapper>
     <Container>
       <Left>
-          left      
+          Neal P Gardner      
       </Left>
-      <Right>Right</Right>
+      <Right>🦹🏻‍♂️</Right>
     </Container>
   </Wrapper>
 )

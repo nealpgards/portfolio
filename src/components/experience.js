@@ -11,9 +11,9 @@ const Wrapper = styled.section`
 const Container = styled.div`
   display:grid;
   max-width: 960px;
-  grid-column-gap: 6rem;
+  grid-column-gap: 2rem;
   padding: 8rem 3rem;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 300px 1fr;
   grid-template-rows: auto;
   justify-items: stretch;
   margin: 0 auto;

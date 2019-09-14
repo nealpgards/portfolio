@@ -11,6 +11,11 @@ const Wrapper = styled.div`
   width: 100%;
   background-color: #FF44A5;
 `
+let education = {
+  title: `CU Boulder BUFFS BABY`,
+  company: `Coloradoooo`,
+  description: `This is a description for stuffffff`
+}
 
 const IndexPage = () => (
   <Layout>
@@ -18,7 +23,7 @@ const IndexPage = () => (
   <Wrapper>
     <Hero/>
     <Experience/>
-    <Education/>
+    <Education {...education}/>
     </Wrapper>
     </Layout>
 )

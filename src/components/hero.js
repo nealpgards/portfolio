@@ -3,9 +3,7 @@ import { Link } from "gatsby"
 import "../components/main.css"
 import styled from '@emotion/styled'
 import { Controller, Scene } from 'react-scrollmagic';
-import { Tween, Timeline } from 'react-gsap';
-
-
+import { Tween } from 'react-gsap';
 
 const Container = styled.div`
   display:grid;
@@ -17,7 +15,6 @@ const Container = styled.div`
   height: calc(100vh - 83.56px);
   margin: 0 auto;
 `
-
 const Title = styled.h1`
   color: white;
   font-weight: 400;
@@ -34,10 +31,14 @@ const Title = styled.h1`
 
 const Hero = () => (
     <Container>
-      <Tween from={{ y: '100px', opacity: 0, }} to={{ y: '0px', color: 'red', opacity: 1 }} duration="0.9">
+      <Tween from={{ y: '100px', opacity: 0, }} to={{ y: '0px', color: 'white', opacity: 0.9 }} duration="0.9">
         <Title>neal gardner is a creative professional with experience building digital and physical products.</Title>
       </Tween>
-    <Link to="/contact/">Go to contact</Link>
+      <Controller>
+      <Scene duration={100} pin>
+      <Link style={{color:`white`, textDecoration: `none`, fontSize: `24px`, fontFamily: `buena-park-jf, serif` }} to="/about">About me</Link>
+      </Scene>
+    </Controller>
     </Container>
 )
 

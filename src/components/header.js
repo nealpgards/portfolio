@@ -14,9 +14,9 @@ const Nav = styled.nav`
   display:grid;
   max-width: 1100px;
   grid-template-columns: 1fr;
-  justify-content: start;
   grid-template-rows: auto;
   padding: 1.5rem 3rem;
+  margin: 0 auto;
 `
 
 const Header = ({ siteTitle }) => (
