@@ -1,7 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Info from "../components/info"
 import Experience from "../components/experience"
 import Education from "../components/education"
 import "../components/main.css"
@@ -17,13 +17,11 @@ let education = {
   description: `This is a description for stuffffff`
 }
 
-
-
-
 const SecondPage = (props) => (
   <Layout>
   <SEO title="About" />
   <Wrapper>
+    <Info/>
     <Experience/>
     <Education {...education}/>
     </Wrapper>

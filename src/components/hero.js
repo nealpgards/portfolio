@@ -1,8 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import "../components/main.css"
 import styled from '@emotion/styled'
-import { Controller, Scene } from 'react-scrollmagic';
+// import { Controller, Scene } from 'react-scrollmagic';
 import { Tween } from 'react-gsap';
 
 const Container = styled.div`
@@ -30,27 +30,27 @@ const Title = styled.h1`
 }
 `
 
-const AboutLink = styled(props => <Link {...props} />)`
-  color: #ffffff;
-  text-decoration: none;
-  font-family: buena-park-jf, serif;
-  font-size: 1.5rem;
+// const AboutLink = styled(props => <Link {...props} />)`
+//   color: #ffffff;
+//   text-decoration: none;
+//   font-family: buena-park-jf, serif;
+//   font-size: 1.5rem;
 
-  &::hover {
-    color: #FF0086;
-  }
-`
+//   &::hover {
+//     color: #FF0086;
+//   }
+// `
 
 const Hero = () => (
     <Container>
       <Tween from={{ y: '100px', opacity: 0, delay: 0.2 }} to={{ y: '0px', color: 'white', opacity: 0.9 }} duration="0.7">
         <Title>neal gardner is a creative professional with experience building digital and physical products.</Title>
       </Tween>
-      <Controller>
+      {/* <Controller>
       <Scene duration={100} pin>
           <AboutLink to="/about">About me</AboutLink>
       </Scene>
-    </Controller>
+    </Controller> */}
     </Container>
 )
 
