@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
+import Things from "../components/things"
 import "../components/main.css"
 import styled from '@emotion/styled'
 
@@ -15,6 +16,7 @@ const IndexPage = () => (
   <SEO title="Home" />
   <Wrapper>
     <Hero/>
+    <Things/>
     </Wrapper>
     </Layout>
 )
