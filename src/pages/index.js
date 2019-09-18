@@ -9,7 +9,6 @@ import Education from "../components/education"
 import Skills from "../components/skills"
 
 
-
 const Wrapper = styled.div`
   width: 100%;
   background-color: #FFFFFF;

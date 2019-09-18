@@ -5,7 +5,6 @@ module.exports = {
     author: `Neal P Gardner`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,6 +24,13 @@ module.exports = {
         theme_color: `#191919`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+        head: false,
       },
     },
   ],
