@@ -12,7 +12,7 @@ const Container = styled.div`
   display:grid;
   max-width: 960px;
   grid-column-gap: 2rem;
-  padding: 8rem 3rem;
+  padding: 8rem 3rem 4rem 3rem;
   grid-template-columns: 300px 1fr;
   grid-template-rows: auto;
   justify-items: stretch;

@@ -12,7 +12,7 @@ const Container = styled.div`
   display:grid;
   max-width: 960px;
   grid-column-gap: 2rem;
-  padding: 8rem 3rem;
+  padding: 2rem 3rem;
   grid-template-columns: 300px 1fr;
   grid-template-rows: auto;
   justify-items: stretch;
@@ -84,9 +84,9 @@ const Education = (props) => (
        <Title>Education</Title>
        <EducationSection>
            <SingleEducation>
-                <h4>{props.title}</h4>
-                <h6>{props.company}</h6>
-                <p>{props.description}</p>
+                <h4>University of Colorado, Boulder</h4>
+                <h6>Degree | Time - Time</h6>
+                <p>&bull; Managed day-to-day operations, production, procurement and delivery of DNA testing products for multiple customers worldwide.</p>
            </SingleEducation>
         
        </EducationSection>

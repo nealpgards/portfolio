@@ -6,6 +6,9 @@ import "../components/main.css"
 import styled from '@emotion/styled'
 import Experience from "../components/experience"
 import Education from "../components/education"
+import Skills from "../components/skills"
+
+
 
 const Wrapper = styled.div`
   width: 100%;
@@ -19,6 +22,7 @@ const IndexPage = () => (
     <Hero/>
     <Experience/>
     <Education/>
+    <Skills/>
     </Wrapper>
     </Layout>
 )

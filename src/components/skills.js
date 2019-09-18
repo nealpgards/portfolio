@@ -1,20 +1,18 @@
+import PropTypes from "prop-types"
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 import "../components/main.css"
 import styled from '@emotion/styled'
 
 const Wrapper = styled.section`
   width: 100%;
   background-color: #ffffff;
-  height: calc(100vh - 83.08px);
 `
 
 const Container = styled.div`
   display:grid;
   max-width: 960px;
   grid-column-gap: 2rem;
-  padding: 8rem 3rem;
+  padding: 2rem 3rem;
   grid-template-columns: 300px 1fr;
   grid-template-rows: auto;
   justify-items: stretch;
@@ -37,10 +35,10 @@ const Title = styled.h2`
 }
 `
 
-const RightSection = styled.div`
+const SkillsSection = styled.div`
 `
 
-const ContactForm = styled.div`
+const SingleSkills = styled.div`
     padding-bottom: 2.2rem;
 
     h4, h6, p {
@@ -78,21 +76,30 @@ const ContactForm = styled.div`
 
 `
 
-const ContactPage = () => (
-    <Layout>
-    <SEO title="Contact" />
-    <Wrapper>
-        <Container><Title>Contact</Title>
-       <RightSection>
-           <ContactForm>
-                <h4>Supshot ☠️</h4>
-                <h6>Founder</h6>
-                <p>This is the description of what i did at that company</p>
-           </ContactForm>
-       </RightSection></Container>
-      </Wrapper>
-      </Layout>
-  )
-  
-  export default ContactPage
-  
+
+
+const Skills = (props) => (
+  <Wrapper>
+    <Container>
+       <Title>Skills</Title>
+       <SkillsSection>
+           <SingleSkills>
+                <h4>University of Colorado, Boulder</h4>
+                <h6>Degree | Time - Time</h6>
+                <p>&bull; Managed day-to-day operations, production, procurement and delivery of DNA testing products for multiple customers worldwide.</p>
+           </SingleSkills>
+        
+       </SkillsSection>
+    </Container>
+  </Wrapper>
+)
+
+Skills.propTypes = {
+  message: PropTypes.string,
+}
+
+Skills.defaultProps = {
+  message: `Title`,
+}
+
+export default Skills

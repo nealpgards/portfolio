@@ -42,14 +42,8 @@ const Right = styled.div`
 
 
 const Footer = ({ siteTitle }) => (
-  <Wrapper>
-    <Container>
-      <Left>
-          Neal P Gardner      
-      </Left>
-      <Right>🦹🏻‍♂️</Right>
-    </Container>
-  </Wrapper>
+  <>
+  </>
 )
 
 Footer.propTypes = {
