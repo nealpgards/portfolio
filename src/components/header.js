@@ -6,7 +6,7 @@ import styled from '@emotion/styled'
 
 const Wrapper = styled.section`
   width: 100%;
-  background-color: #FF44A5;
+  background-color: #ffffff;
 `
 
 const Nav = styled.nav`
@@ -33,16 +33,15 @@ const Right = styled.div`
 `
 
 const HeaderLink = styled(props => <Link {...props} />)`
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
+color: #191919;
+text-decoration: none;
   letter-spacing: 0.5px;
   margin-bottom: 0;
   padding-bottom: 0;
-  font-weight: 700;
+  font-weight: 400;
   padding: 0rem 1rem;
   font-size: 0.8rem;
-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+font-family: "stratos", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   &:hover {
@@ -66,7 +65,6 @@ const Header = () => (
         </LogoLink>
         </Left>
         <Right>
-          <HeaderLink to="/about">About</HeaderLink>
           <HeaderLink to="/contact">Contact</HeaderLink>
         </Right>
     </Nav>

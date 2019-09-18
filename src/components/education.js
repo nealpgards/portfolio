@@ -25,10 +25,9 @@ const Container = styled.div`
 const Title = styled.h2`
   color: #191919;
   font-weight: 400;
-  font-size: 2rem;
-  opacity: 0.9;
-font-family: buena-park-jf, serif;
-max-width: 1100px;
+  font-size: 1.5rem;
+  font-family: "stratos", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
 
 @media (max-width: 768px) {
@@ -40,10 +39,36 @@ const EducationSection = styled.div`
 `
 
 const SingleEducation = styled.div`
-    padding-bottom: 2rem;
+    padding-bottom: 2.2rem;
 
     h4, h6, p {
-        margin-bottom: .75rem;
+        letter-spacing: 0.1px;
+    }
+
+    h4 {
+      margin-bottom: .6rem;
+        font-family: 'stratos', sans-serif;
+        font-weight: 400;
+        color: #191919;
+        font-size: 16px;
+    }
+
+    h6 {
+      margin-bottom: .8rem;
+        font-family: 'stratos', sans-serif;
+        font-weight: 400;
+        opacity: .5;
+        font-size: 16px;
+        color: #191919;
+    }
+
+    p {
+      margin-bottom: .6rem;
+      font-size: 16px;
+      line-height: 140%;
+        font-family: 'stratos', sans-serif;
+        font-weight: 400;
+        color: #191919;
     }
 
 

@@ -1,1 +1,7 @@
 @import url("https://use.typekit.net/skl0kuq.css");
+
+*, html, body {
+    font-family: stratos, sans-serif;
+
+
+}
