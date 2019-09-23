@@ -48,7 +48,7 @@ const Hero = () => (
       <TitleContainer>
         <h1>Hi, I'm Neal <span style={{fontStyle: `normal`}}>✌🏼</span></h1>
         <h1>I’m a creative professional with over six years of startup experience designing and launching products.</h1>
-        <h1>I’m passionate about UX design, consumer products, strategy, and building brands.</h1>
+        <h1>I’m passionate about UX design, consumer products, and building brands.</h1>
       </TitleContainer>
       {/* </Tween> */}
     </Container>

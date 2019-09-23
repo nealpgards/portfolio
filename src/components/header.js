@@ -30,7 +30,6 @@ justify-self: start;
 const LogoLink = styled(props => <Link {...props} />)`
 color: #191919;
 text-decoration: none;
-  letter-spacing: 0.5px;
   margin-bottom: 0;
   padding-bottom: 0;
   font-weight: 400;
@@ -48,7 +47,6 @@ const Right = styled.div`
 const HeaderLink = styled(props => <Link {...props} />)`
 color: #191919;
 text-decoration: none;
-  letter-spacing: 0.5px;
   margin-bottom: 0;
   padding-bottom: 0;
   font-weight: 400;
