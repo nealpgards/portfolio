@@ -13,27 +13,34 @@ const Container = styled.div`
   height: auto;
   margin: 0 auto;
 `
-const Title = styled.h1`
-  color: #191919;
-  font-size: 2.1rem;
-  padding: 3rem 0 1rem 0;
-  font-family: kiro, sans-serif;
-  font-weight: 700;
-  font-style: italic;
-  line-height: 140%;
-  transition: .4s all ease-in-out;
-  opacity: 0;
 
-@media (max-width: 768px) {
-  font-size: 2rem;
-}
+
+const TitleContainer = styled.div`
+  padding-top: 2rem;  
+
+  h1 {
+    color: #191919;
+    font-size: 2.1rem;
+    padding: 1rem 0 0 0;
+    margin: 0;
+    font-family: kiro, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 140%;
+    transition: .4s all ease-in-out;
+  }
+
 `
 
 const Hero = () => (
     <Container>
-      <Tween from={{ y: '50px', opacity: 0}} to={{ y: '0px', color: '#191919', opacity: 1 }} delay="0.3" duration="0.4">
-        <Title>Neal Gardner is a creative professional with experience building digital and physical products.</Title>
-      </Tween>
+      {/* <Tween from={{ y: '50px', opacity: 0}} to={{ y: '0px', color: '#191919', opacity: 1 }} delay="0.3" duration="0.4"> */}
+      <TitleContainer>
+        <h1>Hi, I'm Neal <span style={{fontStyle: `normal`}}>✌🏼</span></h1>
+        <h1>I’m a creative professional with over six years of startup experience designing and launching products.</h1>
+        <h1>I’m passionate about UX design, consumer products, strategy, and building brands.</h1>
+      </TitleContainer>
+      {/* </Tween> */}
     </Container>
 )
 

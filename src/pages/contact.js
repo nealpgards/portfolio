@@ -55,13 +55,14 @@ const ContactForm = styled.div`
         font-size: 16px;
     }
 
-    h6 {
+    h6, a {
       margin-bottom: .8rem;
         font-family: 'stratos', sans-serif;
         font-weight: 400;
         opacity: .5;
         font-size: 16px;
         color: #191919;
+        text-decoration: none;
     }
 
     p {
@@ -85,9 +86,13 @@ const ContactPage = () => (
         <Container><Title>Contact</Title>
        <RightSection>
            <ContactForm>
-                <h4>Supshot ☠️</h4>
-                <h6>Founder</h6>
-                <p>This is the description of what i did at that company</p>
+                <h4>Email</h4>
+                <a href="mailto:nealpgardner@gmail.com">nealpgardner@gmail.com</a>
+           </ContactForm>
+           <ContactForm>
+                <h4>LinkedIn</h4>
+                <a href="https://linkedin.com/in/nealpgardner">linkedin.com/in/nealpgardner</a>
+                
            </ContactForm>
        </RightSection></Container>
       </Wrapper>

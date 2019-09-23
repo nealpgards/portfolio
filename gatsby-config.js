@@ -23,7 +23,7 @@ module.exports = {
         background_color: `#191919`,
         theme_color: `#191919`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/npg-favicon.png`,
       },
     },
     {

@@ -21,11 +21,20 @@ const Nav = styled.nav`
 
 const Left = styled.div`
 justify-start: end;
-max-width: 64px;
-
 `
 
 const LogoLink = styled(props => <Link {...props} />)`
+color: #191919;
+text-decoration: none;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: 400;
+  padding: 0rem 1rem;
+  font-size: 0.8rem;
+font-family: "stratos", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 `
 
 const Right = styled.div`
@@ -61,7 +70,7 @@ const Header = () => (
       <Left>
         <LogoLink
           to="/">
-          <Image/>
+          Neal P Gardner
         </LogoLink>
         </Left>
         <Right>

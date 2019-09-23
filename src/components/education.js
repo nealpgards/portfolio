@@ -84,9 +84,11 @@ const Education = (props) => (
        <Title>Education</Title>
        <EducationSection>
            <SingleEducation>
-                <h4>University of Colorado, Boulder</h4>
-                <h6>Degree | Time - Time</h6>
-                <p>&bull; Managed day-to-day operations, production, procurement and delivery of DNA testing products for multiple customers worldwide.</p>
+                <h4>University of Colorado at Boulder, Leeds School of Business</h4>
+                <h6>Boulder, CO | 2007 - 2012</h6>
+                <p>&bull; BS, Business Administration | Emphasis in Management & Marketing</p>
+                <p>&bull; Co-founder & President of Leeds Business of Sports Club</p>
+                <p>&bull; Study abroad at University of Salzburg in Salzburg, Austria</p>
            </SingleEducation>
         
        </EducationSection>

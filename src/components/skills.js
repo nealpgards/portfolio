@@ -39,7 +39,7 @@ const SkillsSection = styled.div`
 `
 
 const SingleSkills = styled.div`
-    padding-bottom: 2.2rem;
+    padding-bottom: 1rem;
 
     h4, h6, p {
         letter-spacing: 0.1px;
@@ -58,6 +58,7 @@ const SingleSkills = styled.div`
         font-family: 'stratos', sans-serif;
         font-weight: 400;
         opacity: .5;
+        line-height: 140%;
         font-size: 16px;
         color: #191919;
     }
@@ -84,9 +85,13 @@ const Skills = (props) => (
        <Title>Skills</Title>
        <SkillsSection>
            <SingleSkills>
-                <h4>University of Colorado, Boulder</h4>
-                <h6>Degree | Time - Time</h6>
-                <p>&bull; Managed day-to-day operations, production, procurement and delivery of DNA testing products for multiple customers worldwide.</p>
+                <h4>General</h4>
+                <h6>UX research, User journeys, Personas, User Interviews, Wireframing, Prototyping</h6>
+                
+           </SingleSkills>
+           <SingleSkills>
+                 <h4>Design Tools</h4>
+                <h6>Sketch, Figma, Adobe Illustrator, Adobe Photoshop, Invision, Marvel</h6>
            </SingleSkills>
         
        </SkillsSection>
