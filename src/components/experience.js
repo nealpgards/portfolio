@@ -31,7 +31,7 @@ const Title = styled.h2`
 
 
 @media (max-width: 768px) {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 `
 
@@ -50,6 +50,8 @@ const SingleExperience = styled.div`
         font-family: 'stratos', sans-serif;
         font-weight: 400;
         color: #191919;
+        line-height: 140%;
+
         font-size: 16px;
     }
 
@@ -58,6 +60,8 @@ const SingleExperience = styled.div`
         font-family: 'stratos', sans-serif;
         font-weight: 400;
         opacity: .5;
+        line-height: 140%;
+
         font-size: 16px;
         color: #191919;
     }

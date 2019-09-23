@@ -28,7 +28,17 @@ const TitleContainer = styled.div`
     font-style: italic;
     line-height: 140%;
     transition: .4s all ease-in-out;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
+
+  @media (max-width: 768px) {
+    padding-top: 1rem;
+  }
+
+  
 
 `
 

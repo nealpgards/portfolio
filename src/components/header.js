@@ -14,13 +14,17 @@ const Nav = styled.nav`
   max-width: 1100px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 1.5rem;
   align-items: center;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding: 1.5rem 3rem;
+  }
 `
 
 const Left = styled.div`
-justify-start: end;
+justify-self: start;
 `
 
 const LogoLink = styled(props => <Link {...props} />)`
@@ -30,7 +34,7 @@ text-decoration: none;
   margin-bottom: 0;
   padding-bottom: 0;
   font-weight: 400;
-  padding: 0rem 1rem;
+  text-align: left;
   font-size: 0.8rem;
 font-family: "stratos", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;

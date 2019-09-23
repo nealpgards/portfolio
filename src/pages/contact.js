@@ -33,7 +33,7 @@ const Title = styled.h2`
 
 
 @media (max-width: 768px) {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 `
 
@@ -51,6 +51,7 @@ const ContactForm = styled.div`
       margin-bottom: .6rem;
         font-family: 'stratos', sans-serif;
         font-weight: 400;
+        line-height: 140%;
         color: #191919;
         font-size: 16px;
     }
@@ -61,6 +62,7 @@ const ContactForm = styled.div`
         font-weight: 400;
         opacity: .5;
         font-size: 16px;
+        line-height: 140%;
         color: #191919;
         text-decoration: none;
     }
