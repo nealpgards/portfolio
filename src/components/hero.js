@@ -1,5 +1,4 @@
 import React from "react"
-import "../components/main.css"
 import styled from '@emotion/styled'
 import { Tween } from 'react-gsap';
 

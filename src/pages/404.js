@@ -1,7 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../components/main.css"
 import styled from '@emotion/styled'
 
 const Wrapper = styled.div`
@@ -22,12 +20,12 @@ const Container = styled.div`
 `
 
 const NotFoundPage = () => (
-    <Layout>
+    <>
     <SEO title="Contact" />
     <Wrapper>
         <Container>You must have found this page by accident, please click the logo above to head back home</Container>
       </Wrapper>
-      </Layout>
+      </>
   )
   
   export default NotFoundPage

@@ -1,7 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../components/main.css"
 import styled from '@emotion/styled'
 
 const Wrapper = styled.section`
@@ -82,7 +80,7 @@ const ContactForm = styled.div`
 `
 
 const ContactPage = () => (
-    <Layout>
+    <>
     <SEO title="Contact" />
     <Wrapper>
         <Container><Title>Contact</Title>
@@ -98,7 +96,7 @@ const ContactPage = () => (
            </ContactForm>
        </RightSection></Container>
       </Wrapper>
-      </Layout>
+      </>
   )
   
   export default ContactPage

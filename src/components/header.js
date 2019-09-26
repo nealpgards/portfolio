@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
 import Image from "../components/image"
-import "../components/main.css"
 import styled from '@emotion/styled'
 
 const Wrapper = styled.section`

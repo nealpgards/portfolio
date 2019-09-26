@@ -1,6 +1,5 @@
 import PropTypes from "prop-types"
 import React from "react"
-import "../components/main.css"
 import styled from '@emotion/styled'
 
 const Wrapper = styled.section`

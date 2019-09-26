@@ -12,8 +12,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, `gatsby-plugin-layout`,
+    `gatsby-plugin-sharp`,{
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        typekit: {
+          id: 'skl0kuq'
+        }
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
