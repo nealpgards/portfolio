@@ -23,6 +23,7 @@ text-decoration: none;
   padding-bottom: 0;
   font-weight: 400;
   padding: 0rem 1rem;
+  padding-top: 8rem;
   font-size: 0.8rem;
 font-family: "stratos", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;

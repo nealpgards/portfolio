@@ -5,6 +5,7 @@ import { Tween } from 'react-gsap';
 const Container = styled.div`
   display:grid;
   max-width: 960px;
+  height: calc(100vh-72px);
   padding: 1.5rem 3rem;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
