@@ -30,7 +30,6 @@ const Layout = ({ children, location }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
         <Transition location={location}>{children}</Transition>
-      <Footer/>
     </>
   )
 }
