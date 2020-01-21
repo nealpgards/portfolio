@@ -1,168 +1,94 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from '@emotion/styled'
-import { Tween } from 'react-gsap';
-import nealprofile from "../images/nealprofile.png"
+import NealLogo from "../images/neal.svg";
+
 
 const Container = styled.div`
-  height: 90vh;
-  max-width: 1600px;
+  height: 100vh;
   margin: 0 auto;
-
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(6,1fr);
-  grid-template-areas: 
-    "left left profile"
-    "left left profile"
-    "left left profile"
-    "left left profile"
-    "left left subtext"
-    "left left subtext";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 0 4rem;
 
-    @media (max-width: 1000px) {
-      min-height: 100vh;
-      grid-template-columns: repeat(2,1fr);
-      grid-template-rows: repeat(6,1fr);
-      grid-template-areas: 
-        "left profile"
-        "left profile"
-        "left profile"
-        "left profile"
-        "left subtext"
-        "left subtext";
+  @media (max-width: 768px) {
+    min-height: 100vh;
+    max-width: 100vw;
+    padding: 0 2rem;
+
+  }
+`
+
+
+const Center = styled.div`
+  max-width: 480px;
+  background-color: #ffffff;
+  color: #222222;
+  line-height: 150%;
+  font-size: 16px;
+  font-weight: normal;
+
+  .logo {
+    background-image: url(${NealLogo});
+    height: 40px;
+    background-repeat: no-repeat;
   }
 
-    @media (max-width: 650px) {
-      min-height: 100vh;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-template-areas: 
-        "left"
-        "profile"
-        "subtext";
+  div {
+    margin-top: 1rem;
+
+    &:first-child {
+      margin-top: 0;
+      margin-bottom: 3rem;
     }
-`
-
-
-const Left = styled.div`
-  grid-area: left;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  background-color: #000000;
-  padding: 12vmin 3rem;
-  color: #ffffff;
   }
 
-  h1 {
-    margin-bottom: 1rem;
-    line-height: 140%;
-    font-weight: bold;
+  p {
+    margin-top: .5rem;
+
+    a {
+      color: #FF00D6;
+    }
   }
-
-  h2 {
-    line-height: 140%;
-    font-weight: 500;
+  li::before{
+    content: "∙  "
   }
-
-  @media (max-width: 768px) {
-      height: auto;
-      max-width: 100vw;
-  }
-`
-
-const Profile = styled(props => <Link {...props} />)`
-  grid-area: profile;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background:url(${nealprofile}); 
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  z-index: 1;
-
-
-  &::before {
-    display: block;
-    content:'About Me';
-    position:absolute;
-    width: auto;
-    padding: 5px 4px;
-    margin-bottom: 25px;
-    margin-left: 25px;
-    bottom: 0;
-    font-size: 1rem;
-    color: #000000;
-    font-weight: bold;
-    text-transform: uppercase;
-    left:0;
-    background-color: transparent;
-    height: auto;
-    border: 3px solid #000000;
-    text-align: center;
-    z-index: 3;
-    transition: 0.4s all ease-in-out;
-
-
-  }
-
-  &:hover::before {
-    background-color: #FFFFFF;
-  }
-
-  @media (max-width: 650px) {
-    height: 100vw;
-    max-width: 100vw;
-}
-`
-
-const Subtext = styled.div`
-  grid-area: subtext;
-  background-color: #00FF43;
-  padding: 1.5rem 3rem;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-
-  h4 {
-    margin-bottom: 1rem;
-    line-height: 140%;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-  }
-
-  h2 {
-    line-height: 120%;
-    font-weight: 500;
-  }
-
-  @media (max-width: 768px) {
-    height: auto;
-    max-width: 100vw;
-    padding: 12vmin 3rem;
-}
 `
 
 
 
 const Hero = () => (
     <Container>
-      <Left>
-        <div style={{maxWidth: `500px`}}>
-          <h1>Hi, I'm Neal Gardner</h1>
-          <h2>I’m a creative professional with over six years of startup experience designing and launching products.</h2>
-        </div>
-      </Left>
-      <Profile to="/contact"/>
-      <Subtext>
-        <div>
-          <h4>What I'm Best At</h4>
-          <h2>startups. product. design. ux. strategy.</h2>
-        </div>
-      </Subtext>
+      <Center>
+          <div className="logo"/>
+          <div>
+          <p>Hello, I’m Neal.</p>
+          </div>
+          <div>
+            <p>I’m a Product Manager and designer with experience building and launching digital and physical products. I love to think big and bring ideas to life from a sketch to prototype to launch.</p>
+          </div>
+          <div>
+            <p>Previous Experience:</p>
+            <ul>
+              <li>Product Operations at Samplifybio 🧪</li>
+              <li>Product/UX design at Veritas Genetics 🧬</li>
+              <li>Founder of a failed startup ☠️</li>
+            </ul>
+          </div>
+          <div>
+            <p>I’m currently seeking product roles in NYC.</p>
+          </div>
+          <div>
+            <p>I’m always happy to share ideas, book recommendations, design concepts, and would love to connect by <a href="https://linkedin.com/in/nealpgardner" target="_blank">LinkedIn</a> or <a href="mailto:nealpgardner@gmail.com">email</a>.</p>
+          </div>
+          <div>
+            <p><span role="img" aria-label>✌🏼</span></p>
+          </div>
+      </Center>
     </Container>
 )
 

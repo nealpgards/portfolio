@@ -21,7 +21,7 @@ const Container = styled.div`
 
 const NotFoundPage = () => (
     <>
-    <SEO title="Contact" />
+    <SEO title="404" />
     <Wrapper>
         <Container>You must have found this page by accident, please click the logo above to head back home</Container>
       </Wrapper>
