@@ -22,6 +22,12 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-drift',
+      options: {
+        appId: '5bakc6veus9r',
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
